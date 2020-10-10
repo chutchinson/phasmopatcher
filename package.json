@@ -1,0 +1,26 @@
+{
+    "name": "phasmopatcher",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build": "parcel build src/index.html --public-url ./",
+        "dev": "parcel src/index.html"
+    },
+    "dependencies": {
+        "js-file-download": "^0.4.12",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "@types/react": "16.8.24",
+        "@types/react-dom": "16.0.5",
+        "parcel-bundler": "1.12.4",
+        "typescript": "3.4.3"
+    },
+    "browserslist": [
+        "last 1 Chrome version"
+    ],
+    "prettier": {
+        "semi": false
+    }
+}

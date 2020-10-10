@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    border: 0;
+    border: 0;
+    outline: none;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #111;
+    color: #fff;
+    overflow-y: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+header {
+    margin: 16px;
+    flex-shrink: 0;
+}
+
+header > p {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+header > h1 {
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
+button {
+    margin-left: 16px;
+    padding: 8px 24px 8px 24px;
+    background-color: #111;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+button:not(:disabled):hover {
+    background-color: #222;
+}
+
+input {
+    background-color: #222;
+    color: #fff;
+    padding: 6px;
+}
+
+input:focus {
+    background-color: #333;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    padding-top: 0;
+    overflow-y: auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px;
+    margin-right: 16px;
+}
+
+.field > label {
+    flex-basis: 230px;
+    margin-right: 16px;
+    user-select: none;
+}
+
+.field > input {
+    flex-grow: 1;
+}
